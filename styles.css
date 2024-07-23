@@ -1,0 +1,175 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background: linear-gradient(to right, #2e0249, #007bb5);
+    padding: 1rem 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+    color: white !important;
+    cursor: pointer;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #ffd700 !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.hero {
+    background: linear-gradient(to right, #2e0249, #007bb5);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about img {
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.skill-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.experience .timeline {
+    position: relative;
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.experience .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #3498db;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.experience .timeline-item {
+    position: relative;
+    padding: 1rem 2rem;
+    background: #fff;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.experience .timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.experience .timeline-item:nth-child(even) {
+    left: 55%;
+}
+
+.experience .timeline-item h4 {
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    background: linear-gradient(to right, #2e0249, #007bb5);
+    padding: 2rem 0;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    display: none;
+    font-size: 18px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+.animate__animated {
+    animation-duration: 1s;
+}
+
+/* Additional styles for smoother scrolling and animations */
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    color: #ffd700 !important;
+}
+
+.animate__animated {
+    animation-duration: 0.5s;
+}
+
+.navbar-nav .nav-link {
+    transition: transform 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+}
+
+.hero h1,
+.hero p,
+.hero a {
+    animation-duration: 1s;
+}
+
+.skills .card,
+.experience .timeline-item,
+.contact .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills .card:hover,
+.experience .timeline-item:hover,
+.contact .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
