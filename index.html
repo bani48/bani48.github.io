@@ -1,149 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    /* Styling for navigation bar */
-    .navbar {
-      padding: 20px 0;
-      background-color: #007bff; /* Warna biru Bootstrap */
-    }
-    /* Styling for slides */
-    .carousel-item {
-      height: 500px;
-    }
-    .carousel-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    /* Styling for footer */
-    footer {
-      background-color: #f8f9fa; /* Warna abu-abu */
-      padding: 20px 0;
-      text-align: center;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      color: white; /* Warna teks putih */
-      font-weight: bold; /* Teks cetak tebal */
-    }
-    .navbar-brand, .nav-link {
-      color: white !important; /* Warna teks putih */
-      font-weight: bold; /* Teks cetak tebal */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muhamad Bani Husni</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <nav class="navbar navbar-expand-md fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Portofolio</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#home" onclick="scrollToSection('#home')">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about" onclick="scrollToSection('#about')">Tentang</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills" onclick="scrollToSection('#skills')">Kemampuan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio" onclick="scrollToSection('#portfolio')">Portofolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact" onclick="scrollToSection('#contact')">Kontak Saya</a>
-          </li>
-        </ul>
-      </div>  
-    </div>
-  </nav>
+    <header class="hero">
+        <div class="container text-center">
+            <h1 class="display-4 animate__animated animate__fadeIn">Muhamad Bani Husni</h1>
+            <p class="lead animate__animated animate__fadeIn animate__delay-1s">Web Programmer & IT Specialist</p>
+            <a href="#about" class="btn btn-primary mt-4 animate__animated animate__fadeIn animate__delay-2s">Learn More</a>
+        </div>
+    </header>
 
-  <div id="home" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#home" data-slide-to="0" class="active"></li>
-      <li data-target="#home" data-slide-to="1"></li>
-      <li data-target="#home" data-slide-to="2"></li>
-    </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="carousel-text">
-          <h3 style="color: white; font-weight: bold;">Web Programmer</h3>
-          <p style="color: white;">Saya adalah seorang web programmer yang berpengalaman.</p>
-        </div>   
-      </div>
-      <div class="carousel-item">
-        <div class="carousel-text">
-          <h3 style="color: white; font-weight: bold;">Hobby</h3>
-          <p style="color: white;">Saya juga memiliki hobi dalam mengembangkan website.</p>
-        </div>   
-      </div>
-      <div class="carousel-item">
-        <div class="carousel-text">
-          <h3 style="color: white; font-weight: bold;">Kemampuan</h3>
-          <p style="color: white;">Berikut adalah kemampuan saya dalam bidang pengembangan web.</p>
-        </div>   
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#home" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#home" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-  </div>
+    <section id="about" class="about py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="photos.jpg" class="img-fluid shadow-lg" alt="Muhamad Bani Husni">
+                </div>
+                <div class="col-md-8">
+                    <h2>About Me</h2>
+                    <p>My name is Muhamad Bani Husni. I am a Web Programmer with 7 years of experience in developing and managing web applications. I have a Bachelor's degree in Information Systems from UNBAJA and currently work as an IT Programmer at PT BCS Logistics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div id="about" class="container">
-    <h2>Tentang</h2>
-    <p>Ini adalah bagian tentang saya.</p>
-  </div>
+    <section id="skills" class="skills py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow-sm animate__animated animate__fadeInLeft">
+                        <div class="card-body">
+                            <h4>Programming Languages</h4>
+                            <ul>
+                                <li><i class="fab fa-js skill-logo"></i> JavaScript</li>
+                                <li><i class="fab fa-html5 skill-logo"></i> HTML & CSS</li>
+                                <li><i class="fab fa-php skill-logo"></i> PHP</li>
+                                <li><i class="fas fa-database skill-logo"></i> SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h4>Frameworks</h4>
+                            <ul>
+                                <li><i class="fab fa-bootstrap skill-logo"></i> Bootstrap</li>
+                                <li><i class="fab fa-js skill-logo"></i> jQuery</li>
+                                <li><i class="fab fa-laravel skill-logo"></i> Laravel</li>
+                                <li><i class="fab fa-codeigniter skill-logo"></i> Codeigniter</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm animate__animated animate__fadeInRight">
+                        <div class="card-body">
+                            <h4>Tools & Technologies</h4>
+                            <ul>
+                                <li><i class="fab fa-git-alt skill-logo"></i> Git</li>
+                                <li><i class="fab fa-docker skill-logo"></i> Docker</li>
+                                <li><i class="fas fa-database skill-logo"></i> MySQL</li>
+                                <li><i class="fab fa-linux skill-logo"></i> Linux</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div id="skills" class="container">
-    <h2>Kemampuan</h2>
-    <p>Ini adalah daftar kemampuan saya:</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Bootstrap</li>
-      <li>PHP</li>
-    </ul>
-  </div>
+    <section id="experience" class="experience py-5">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item shadow-sm animate__animated animate__fadeInLeft">
+                    <h4>IT Programmer - PT BCS Logistics</h4>
+                    <p>July 2017 - Present</p>
+                    <p>Developing and maintaining web applications for logistics and supply chain management. My responsibilities include designing user interfaces, optimizing database queries, and integrating third-party APIs to improve system functionality.</p>
+                </div>
+                <div class="timeline-item shadow-sm animate__animated animate__fadeInRight">
+                    <h4>Web Programmer - PT Krakatau Information Technology</h4>
+                    <p>2013 - June 2017</p>
+                    <p>Worked on various web development projects, ensuring seamless integration and functionality. I was involved in full-stack development, including front-end design, back-end logic, and database management, contributing to several high-impact projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div id="portfolio" class="container">
-    <h2>Portofolio</h2>
-    <p>Ini adalah portofolio saya:</p>
-    <!-- Tambahkan portofolio Anda di sini -->
-  </div>
+    <section id="contact" class="contact py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contact</h2>
+            <p class="text-center">Feel free to reach out to me through the following channels:</p>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card shadow-sm animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Email: <a href="mailto:bani.husni@example.com">bani.husni@example.com</a></li>
+                                <li class="list-group-item">LinkedIn: <a href="https://www.linkedin.com/in/bani-husni">linkedin.com/in/bani-husni</a></li>
+                                <li class="list-group-item">GitHub: <a href="https://github.com/bani-husni">github.com/bani-husni</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div id="contact" class="container">
-    <h2>Kontak Saya</h2>
-    <p>Silakan hubungi saya melalui email: example@example.com</p>
-  </div>
+    <footer class="footer bg-primary text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Muhamad Bani Husni. All rights reserved.</p>
+        </div>
+    </footer>
 
-  <footer>
-    Footer by Muhamad Bani Husni
-  </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    function scrollToSection(sectionId) {
-      $('html, body').animate({
-        scrollTop: $(sectionId).offset().top
-      }, 800);
-    }
-  </script>
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
